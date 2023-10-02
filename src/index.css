@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
 
 @layer base {
     html , body {
@@ -10,3 +15,14 @@
         @apply antialiased
     }
 }
+
+
+
+.flag-select button {
+    @apply h-14 border-2 bg-white border-gray-200 transition-colors hover:border-primary-brand-color rounded 
+}
+
+.flag-select button >span span:nth-child(2){
+    @apply text-sm pl-2
+}
+
