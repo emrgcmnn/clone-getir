@@ -22,7 +22,11 @@ export default function HeroSection() {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 2000,
+    cssEase: "linear"
   };
 
   return (
@@ -56,14 +60,15 @@ export default function HeroSection() {
                 selected={selected}
                 className="flag-select"
               />
-              <label className="flex-1 relative block">
-                <input className="h-14 px-4 border-2 border-gray-200 hover:border-primary-brand-color focus:border-primary-brand-color transition-colors rounded w-full outline-none peer"/>
-                <span className=" absolute top-0 left-0 h-full px-4 flex items-center text-sm text-gray-700 peer-focus:h-5 transition-all">Telefon Numarası</span>
+              <label className="cursor-pointer flex-1 relative block">
+                <input required className="h-14 px-4 border-2 border-gray-200 hover:border-primary-brand-color focus:border-primary-brand-color transition-colors rounded w-full outline-none peer text-sm pt-2"/>
+                <span className=" absolute top-0 left-0 h-full px-4 flex items-center text-sm text-gray-500 peer-focus:h-5 peer-focus:text-primary-brand-color peer-focus:text-xs peer-valid:h-5 peer-valid:text-primary-brand-color peer-valid:text-xs transition-all">Telefon Numarası</span>
               </label>
               
             </div>
             
-            <button className="bg-third-brand-color text-primary-brand-color hover:bg-primary-brand-color hover:text-third-brand-color transition-all rounded font-semibold p-4 mt-4 w-full">Telefon numarası ile devam et</button>
+            <button className="cursor-pointer bg-third-brand-color text-primary-brand-color hover:bg-primary-brand-color hover:text-third-brand-color transition-all rounded font-semibold p-4 mt-4 w-full">Telefon numarası ile devam et</button>
+
 
           </div>
         </div>

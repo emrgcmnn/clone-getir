@@ -12,11 +12,13 @@
 @layer base {
     html , body {
         font-family: 'Open Sans', sans-serif;
-        @apply antialiased
+        @apply antialiased bg-gray-50
     }
 }
 
-
+.flag-select {
+    @apply !pb-0
+}
 
 .flag-select button {
     @apply h-14 border-2 bg-white border-gray-200 transition-colors hover:border-primary-brand-color rounded 
