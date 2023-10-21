@@ -45,7 +45,7 @@ const [banners, setBanners] = useState ([]);
 
   return (
     <div className="container mx-auto py-8">
-      <h3 className="text-sm font-semibold mb-3">Kampanyalar</h3>
+      <h3  className="text-sm font-semibold mb-3">Kampanyalar</h3>
       <Slider className="-mx-2" {...settings}>
 					{banners.length && banners.map((banner,index) => (
 						<div key={banner.id} >
